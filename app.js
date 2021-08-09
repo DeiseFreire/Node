@@ -1,5 +1,5 @@
 /**
- * LIMA, Victor. Curso de node.js: Protocolo HTTP #05. 20 nov. 2018, 06 dec. 2018. 63 p.  * Notas de Aula. No prelo.
+ * LIMA, Victor. Curso de node.js: Protocolo HTTP #05. 20 nov. 2018, 06 dec. 2018. 63 p. Notas de Aula. No prelo.
  */
 
 var http = require('http');
