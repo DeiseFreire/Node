@@ -3,7 +3,7 @@
  * Notas de Aula. No prelo.
  */
 
-function soma() {
+function soma () {
 return a+b;
 }
 function sub(){
