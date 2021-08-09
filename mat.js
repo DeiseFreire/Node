@@ -3,7 +3,7 @@
  * 2018. 63 p. Notas de Aula. No prelo.
  */
 
-var num = 10
+var num  = 10
 var num2 = 20
 
 function somar(a, b) {
