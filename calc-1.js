@@ -3,7 +3,7 @@
  * Notas de Aula. No prelo.
  */
 var SomaFunc = require("./somar");
-var SubFunc = require("./sub");
+var SubFunc  = require("./sub");
 var MultFunc = require("/.multi");
 
 console.log(SomaFunc(1, 2));
