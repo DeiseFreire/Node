@@ -1,0 +1,71 @@
+/**
+ * LIMA, Victor. Curso de node.js: Exibindo HTML #10. 21 nov. 2018, 06 dec. 2018. 63 p. Notas de Aula. No prelo.
+ */
+
+const express = require('express');
+const app = express();
+
+app.get("/", function(req, res) {
+    /** res.send("Bem vindos ao meu app!");*/
+res.sendFile(__dirname + "/html/index.html");
+});
+
+app.get("/sobre", function(req, res) {
+    /** res.send("Bem-vindo a minha pagina sobre"); */
+res.sendFile(__dirname +"/html/sobre.html");
+});
+
+app.get('/blog', function(req, res) {
+    res.send("Bem-vindo ao meu blog!");
+});
+
+app.get('/ola/:cargo/:nome/:cor', function(req, res) {
+    res.send("<h1>Ola " + req.params.nome + "</h1>" + "<h2> Seu cargo e: " + req.params.cargo + "</h2>" + "<h3> Sua cor favorita e: " + req.params.cor + "</h3>");
+});
+
+app.listen(8081, function() {
+    console.log("Servidor Rodando!");
+});
+
+/**
+ * Ppasta: html
+ * Arquivo: index.html
+ */ 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu app!</title>
+</head>
+
+<body>
+<h1>Olá, seja bem-vindo ao meu app</h1>
+<h2>Meu nome é Deise Freire</h2>
+
+</body>
+
+</html>
+/**
+ * Pasta: html
+ * Arquivo: sobre.html
+ */
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+</head>
+
+<body>
+<h1>Olá, meu nome é Deise Freire</h1>
+</body>
+
+</html>
